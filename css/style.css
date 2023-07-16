@@ -27,13 +27,14 @@ header {
 }
 
 /*nav style */
+
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    padding-right: 240px;
-    padding-left: 240px;
+    padding-right: 200px;
+    padding-left: 200px;
     padding-top: 90px;
 
 }
@@ -79,13 +80,41 @@ nav li {
     font-weight: 400;
     margin-bottom: 30px;
 }
-
-.banner-image {
-    max-width: 1440px;
-    height: 700px;
-    align-items: center;
-
+.banner-image{
+       max-width:1140px;
+       margin:0 auto;
+       
 }
 .banner-image img{
-    margin: 0 auto;
+    width: 100%;
+    margin-bottom: 50px;
+
+}
+
+/* Responsive style*/
+
+/*For small device*/
+@media screen and (max-width:576px) {
+    nav{
+        display:flex;
+        flex-direction:column;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    nav ul{
+        align-items: center;
+        text-align: center;
+    }
+    .logo-name{
+        margin-bottom: 20px;
+    }
+    .banner-content {
+        padding: 0 100px;
+    }
+    .banner-title {
+        font-size: 3rem;
+        
+    
+    }
+
 }
