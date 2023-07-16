@@ -21,6 +21,18 @@
     margin-bottom: 30px;
 }
 
+.section-description {
+    color: #727272;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.text-light-gray {
+    color: #727272;
+
+}
+
 /*Header style*/
 header {
     background-color: rgba(255, 144, 14, 0.10);
@@ -80,41 +92,121 @@ nav li {
     font-weight: 400;
     margin-bottom: 30px;
 }
-.banner-image{
-       max-width:1140px;
-       margin:0 auto;
-       
+
+.banner-image {
+    max-width: 1140px;
+    margin: 0 auto;
+
 }
-.banner-image img{
+
+.banner-image img {
     width: 100%;
     margin-bottom: 50px;
 
 }
 
+/*Features section style*/
+.feature {
+    display: flex;
+    align-items: center;
+    max-width: 1240px;
+    margin: 60px auto;
+
+}
+
+.feature-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px
+}
+.feature-content {
+    padding-left: 90px;
+}
+
+.feature-title {
+    font-size: 2.8rem;
+    font-weight:500;
+    margin-bottom: 20px;
+
+}
+
+.of-our {
+    color:#131313;
+    font-size:2.8rem;
+    font-weight: 700;
+}
+.feature-text{
+    color: #FF900E;
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+/*Footer style*/
+.footer-section {
+    max-width: 1140px;
+    height: 80px;
+    border-radius: 8px;
+    background: #FFF4E7;
+    margin: 0 auto;
+
+}
+.footer-container{
+    width:100%;
+    text-align: center;
+    padding-top: 50px;
+}
+.footer-content{
+    font-size: 18px;
+    color:#424242;
+    font-weight: 400;
+}
+
+
 /* Responsive style*/
 
 /*For small device*/
 @media screen and (max-width:576px) {
-    nav{
-        display:flex;
-        flex-direction:column;
+    nav {
+        display: flex;
+        flex-direction: column;
         padding-left: 50px;
         padding-right: 50px;
     }
-    nav ul{
+
+    nav ul {
         align-items: center;
         text-align: center;
     }
-    .logo-name{
+
+    .logo-name {
         margin-bottom: 20px;
     }
+
     .banner-content {
         padding: 0 100px;
     }
+
     .banner-title {
         font-size: 3rem;
-        
-    
+
+
+    }
+    .feature{
+        flex-direction: column;
+    }
+    .feature-images {
+        grid-template-columns: repeat(1,1fr);
+        gap:5px;
+    }
+    .feature-content{
+        padding-left: 20px;
+    }
+
+    .footer-container{
+        padding-top:20px;
+    }
+    .footer-content{
+        font-size: 16;
     }
 
 }
