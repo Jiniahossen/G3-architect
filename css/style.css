@@ -153,17 +153,17 @@ nav li {
 /*Some facts section style*/
 .some-facts{
     margin-top: 100px;
-    margin-bottom: 100px;
+    margin-bottom: 120px;
 }
 .some-facts-container {
     align-items: center;
     padding-left: 100px;
-    padding-right: 120px;
+    padding-right: 100px;
 }
 
 .box-section {
     display: flex;
-    justify-content: space-around;
+    justify-content:space-between;
     text-align: center;
     align-items: center;
     margin-top: 80px;
@@ -289,7 +289,19 @@ nav li {
     .feature-title .of-our .feature-text {
         font-size: 2.3rem;
     }
-
+    .some-facts{
+        margin-top:50px;
+        margin-bottom:50px;
+    }
+    .some-facts-container {
+        padding-left: 30px;
+        padding-right:50px;
+    }
+    .box-section {
+        flex-direction: column;
+        margin-top: 50px;
+        gap: 10px;
+    }
     .our-sponsors-images {
         flex-direction: column;
         align-items: center;
